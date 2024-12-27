@@ -28,6 +28,6 @@ public class SeleniumTest {
 
         driver.navigate().refresh();
 
-        driver.quit();
+//        driver.quit();
     }
 }
