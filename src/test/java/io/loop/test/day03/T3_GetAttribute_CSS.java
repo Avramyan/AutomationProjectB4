@@ -1,4 +1,4 @@
-package io.loop.test.day3;
+package io.loop.test.day03;
 
 import io.loop.test.utilities.DocuportConstants;
 import io.loop.test.utilities.GeneralConstants;

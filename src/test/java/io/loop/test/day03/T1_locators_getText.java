@@ -1,11 +1,10 @@
-package io.loop.test.day3;
+package io.loop.test.day03;
 
 import io.loop.test.utilities.DocuportConstants;
 import io.loop.test.utilities.WebDriverUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class T1_locators_getText {
     public static void main(String[] args) {

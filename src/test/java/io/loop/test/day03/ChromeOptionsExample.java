@@ -1,4 +1,4 @@
-package io.loop.test.day3;
+package io.loop.test.day03;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
