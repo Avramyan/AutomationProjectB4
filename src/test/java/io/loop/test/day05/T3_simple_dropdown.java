@@ -37,7 +37,7 @@ public class T3_simple_dropdown {
         WebElement dropdownElem = driver.findElement(By.xpath("//select[@id='dropdown']"));
         Select dropdown = new Select(dropdownElem);
         actual = dropdown.getFirstSelectedOption().getText();
-        assertEquals(actual, expected, "Actual doe not match expected");
+        assertEquals(actual, expected, "Actual does not match expected");
 
     }
 }

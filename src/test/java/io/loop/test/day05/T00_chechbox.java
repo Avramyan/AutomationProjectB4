@@ -26,20 +26,26 @@ public class T00_chechbox {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
         WebElement checkbox1 = driver.findElement(By.xpath("//input/following-sibling::text()[contains(.,'checkbox 1')]/preceding-sibling::input"));
-        if (! (checkbox1.isSelected()) ) {
+        if (!(checkbox1.isSelected())) {
             System.out.println("checkbox1 is not Selected");
-        }else {
+        } else {
             System.out.println("checkbox1 is Selected");
         }
         checkbox1.click();
-        if (! (checkbox1.isSelected()) ) {
+        if (!(checkbox1.isSelected())) {
             System.out.println("checkbox1 is not Selected");
-        }else {
+        } else {
             System.out.println("checkbox1 is Selected");
         }
 
+        WebElement checkbox2 = driver.findElement(By.xpath("//input[@type='checkbox' and preceding-sibling::input]"));
+        if (!(checkbox2.isSelected())) {
+            System.out.println("checkbox2 is not Selected");
 
-
+        } else {
+            System.out.println("checkbox2 is Selected");
+        }
+        checkbox2.click();
 
         //input[@type='checkbox' and following-sibling::text()[contains(., ' checkbox 1')]]
     }
