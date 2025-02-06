@@ -28,7 +28,7 @@ public class T3_window_titles extends TestBase {
 
         BrowserUtils.switchWindowAndValidate(driver,"google.com","Google");
         System.out.println(driver.getTitle());
-        BrowserUtils.switcTohWindow(driver,"amazon.com");
+        BrowserUtils.switcTohWindow(driver,"amazon.com ");
         System.out.println(driver.getTitle());
     }
 }

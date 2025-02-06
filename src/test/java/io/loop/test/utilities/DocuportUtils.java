@@ -26,8 +26,10 @@ public class DocuportUtils {
                 username.sendKeys(DocuportConstants.USERNAME_CLIENT);
                 password.sendKeys(DocuportConstants.PASSWORD);
                 break;
-            case "supervisor":
-//                username.sendKeys(DocuportConstants.);
+            case "advisor":
+                username.sendKeys(DocuportConstants.USERNAME_ADVISOR);
+                password.sendKeys(DocuportConstants.PASSWORD);
+                break;
             default:
                 throw new InterruptedException("There is not such a role:" + role);
         }
@@ -39,19 +41,21 @@ public class DocuportUtils {
             con.click();
         }
     }
-/**
- * logs out fron Docuport app
- * @param driver
- * @author artemavramov
- */
 
-public static void logout(WebDriver driver)  {
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-    WebElement userIcon = driver.findElement(By.xpath("//span[.='BG']"));
-    userIcon.click();
+    /**
+     * logs out fron Docuport app
+     *
+     * @param driver
+     * @author artemavramov
+     */
 
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-WebElement logoutButton = driver.findElement(By.xpath("//span[.='Log out']"));
-logoutButton.click();
-}
+    public static void logout(WebDriver driver) {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        WebElement userIcon = driver.findElement(By.xpath("//span[.='BG']"));
+        userIcon.click();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        WebElement logoutButton = driver.findElement(By.xpath("//span[.='Log out']"));
+        logoutButton.click();
+    }
 }
