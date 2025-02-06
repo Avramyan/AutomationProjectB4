@@ -1,4 +1,4 @@
-package io.loop.test.day6;
+package io.loop.test.day06;
 
 import io.loop.test.base.TestBase;
 import org.openqa.selenium.By;
